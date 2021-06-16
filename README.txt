@@ -8,6 +8,6 @@ Execute_xcat.m requires licensed 4D-XCAT software, does not function without a c
 Intended order of operation:
 
 - Generate_parfiles.m   (options: healthy or abnormal EF, number of parameter files)
-- Execute_xcat.m	(options: healthy or abnormal .par files, patientslice = [patientid1, patientid2, ...](select .par files to simulate)
+- Execute_xcat.m	(options: healthy or abnormal .par files, patientslice = [int, int ...](select .par files to simulate)
 
 
