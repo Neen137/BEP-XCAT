@@ -1,6 +1,8 @@
 
 fclose('all');
 
+%Read volumes from .log, .bin, and .par files
+
 %-------------LV Volumes at Different Phases----------
 %  V1 (end-diastole)
 %  V2 (end-systole)
