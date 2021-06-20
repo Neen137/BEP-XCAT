@@ -1,5 +1,5 @@
 
-patientslice = [9]; %patient_ids to be generated
+patientslice = [9 22]; %patient_ids to be generated
 abnormal = 1;% 0 == healthy/normal ; 1 == diseased/abnormal
 if abnormal == 0 
     parpath = '..\Parameters\parameters_h_patient_';
