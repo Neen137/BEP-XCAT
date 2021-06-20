@@ -31,8 +31,7 @@ gender = zeros(1,n); %if using female models, change to ones
 standard_height = 175.23262; %from unchanged .log file
 phantom_height_scale = heights_male/standard_height;
 
-%for now phantom scales in all directions equally (find relation to torso
-%dimensions with respect to height)
+
 %correlated truncated normal if distribution is found
 phantom_long_axis_scale = phantom_height_scale .* TruncatedNormal(n, 1, 0.005, 0.95, 1.05); %random max 5% variation
 phantom_short_axis_scale = phantom_height_scale .* TruncatedNormal(n, 1, 0.005, 0.95, 1.05); %random max 5% variation
@@ -79,7 +78,7 @@ male_hrtangle_1 = TruncatedNormal(n, 20, 9, 0, 41);
 %male_hrtangle_2 = TruncatedNormal(n, 36, 12, 15, 73);%adjust values to
 %combat extreme heart rotation this source is shaky at best
 %if the heart is bigger it lies further back
-%((and goes right more)) -- not sure
+
 %heart size
 male_trans_lat = correlated_truncated_normal(phantom_long_axis_scale, n, 56, 11, 35, 80, 0.7);
 male_trans_ap = correlated_truncated_normal(phantom_short_axis_scale, n, -64, 26, -116, 12, -0.7);
